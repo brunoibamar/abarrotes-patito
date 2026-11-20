@@ -1,0 +1,9 @@
+{
+  "name": "abarrotes-patito",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Demostración local de punto de venta accesible para tablet",
+  "scripts": { "start": "node server.js", "test": "node --test" },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,26 @@
+name: Revisar punto de venta
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Cálculos y archivos de la aplicación
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Revisar sintaxis
+        run: |
+          node --check server.js
+          for file in public/*.js; do node --check "$file"; done
+      - name: Probar ventas, inventario y proveedores
+        run: node --test

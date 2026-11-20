@@ -1,0 +1,107 @@
+/* Salvia y marfil: una interfaz clara, con grandes superficies de blanco suavizadas. */
+:root{
+  --canvas:#d8e2d5;
+  --surface:#f1eee2;
+  --surface-soft:#e6ecdd;
+  --surface-input:#e9eedf;
+  --green:#2b654d;
+  --deep:#23523e;
+  --muted:#52614f;
+  --line:#becbb7;
+  --shadow:0 3px 5px #31422a04,0 10px 28px #31422a09;
+  color:#293d30;
+  background:var(--canvas);
+}
+body{color:#293d30;background:radial-gradient(ellipse at 85% 0,#e4e9d98c,transparent 55%),var(--canvas)}
+.app-header{background:linear-gradient(115deg,#e8ecde,#e1e8d9);border-color:#b7c6b0;box-shadow:0 3px 14px #34472c09}
+.sidebar{background:linear-gradient(180deg,#e6ebdd,#dfe7d7);border-color:#b7c6b0}
+.brand{color:#315740}
+.header-right,.nav-button,.sidebar-foot{color:#50614e}
+.demo-strip{background:#e8dcba;color:#5c4c27}
+h1{color:#294632}
+.section-eyebrow{color:#365f42}
+.panel,.product,.cart,.delivery-product{background:var(--surface);border-color:var(--line)}
+.product{box-shadow:0 2px 0 #bec9b348,0 6px 15px #34472c07}
+.product-art{background-image:radial-gradient(ellipse at top left,#fff7e829,transparent 80%);box-shadow:inset 0 1px 0 #faf7e536}
+.rose{background-color:#e9d8cc}
+.yellow{background-color:#e7ddb7}
+.sand{background-color:#e4ddc9}
+.lavender{background-color:#ddd9e5}
+.blue{background-color:#d9e2db}
+.search-box{background:var(--surface-input);border-color:#a4b79b;box-shadow:0 2px 0 #b3c3aa33,0 5px 16px #34472c05}
+.search-box input{color:#293d30}
+.search-box input::placeholder,.field input::placeholder{color:#62715c;opacity:1}
+.search-box:focus-within{background:#edf0e3;border-color:#607f55;box-shadow:0 0 0 3px #607f5517}
+.chip{background:#e8eddf;border-color:#b6c6ac;color:#385039}
+.chip.active,.primary{background:linear-gradient(145deg,#376f51,#2b6048);color:#fffbee;border-color:#315d43}
+.primary{box-shadow:inset 0 1px 0 #e4edda26,0 3px 0 #244d36,0 7px 14px #34472c15}
+.primary:disabled{background:#aab99f;border-color:#aab99f;color:#354932;opacity:.75}
+.secondary,.back-button{background:linear-gradient(#eeefdf,#e3e9d8);border-color:#a6b99c;color:#345c3e;box-shadow:inset 0 1px 0 #f5f3e550,0 2px 0 #c1cfb7,0 4px 9px #34472c05}
+.table-action,.supplier-edit{background:#dbe6d1;color:#345b3c;box-shadow:inset 0 1px 0 #f3f5e447,0 2px 0 #c2d0b8}
+.help-button{background:transparent;color:#425c44}
+.help-button span{border-color:#8ba17d}
+.nav-button.active{background:linear-gradient(140deg,#d1dfc7,#d9e5ce);border-color:#adbf9f;color:#2f5c3b;box-shadow:inset 0 1px 0 #f0f4e84d,0 3px 8px #34472c05}
+.nav-button.active::before{background:#557c49}
+.cart-heading{background:linear-gradient(120deg,#e8ecdc,#e0e8d5)}
+.cart-footer{background:linear-gradient(#e9ecdd,#e0e7d4)}
+.cart{box-shadow:0 3px 5px #34472c04,0 12px 30px #34472c0c}
+.cart-heading h2>svg{color:#527044}
+.count-badge,.add-dot{background:#d7e3cc;color:#345f3d;border-color:#b6c9a9;box-shadow:none}
+.cart-empty .empty-icon{background:radial-gradient(circle at top left,#e8eddd,#d8e3ce);border-color:#c0d0b5;box-shadow:inset 0 1px 0 #f2f3e63d}
+.cart-empty strong{color:#4f6448}
+.qty-controls button,.delivery-counter button,.keypad button{background:#dfe8d5;background-image:linear-gradient(145deg,#f5f1de29,transparent);color:#34563b;box-shadow:inset 0 1px 0 #f5f3e559}
+.qty-controls,.delivery-counter>div{border-color:#b1c2a5;background:var(--surface-input)}
+.keypad button{border-color:#bdcdb2;box-shadow:inset 0 1px 0 #f6f2df4d,0 2px 0 #bfceb4}
+.quick-cash button{background:#e6ecda;border-color:#b4c6a6;color:#345b3c;box-shadow:0 2px 0 #c3d1b9}
+.field input,.field select,.delivery-counter input{background:var(--surface-input);border-color:#aebfa3;color:#293d30}
+.field input[readonly]{background:#dfe6d5;color:#4b6346}
+.field select option{background:var(--surface-input);color:#293d30}
+.field input:focus,.field select:focus,.delivery-counter>div:focus-within{border-color:#648653;box-shadow:0 0 0 3px #64865315}
+.payment-options label{background:#ebeede;border-color:#bfccb6}
+.payment-options label:has(input:checked){background:#d9e5cf;border-color:#6a8d58;box-shadow:0 0 0 2px #6486530c}
+.payment-options input,.check-field input{accent-color:#476d3c}
+.delivery-product.has-delivery{background:#e7edde;border-color:#8ba779}
+.supplier-catalog,.supplier-product-pictures>div{background:#e3e9d8;border-color:#c2cfb8;color:#52634c}
+.supplier-logo.red{background:#e6d4c6;color:#874f3c}
+.supplier-logo.blue{background:#d6dfd7;color:#45674e}
+.supplier-logo.yellow{background:#e4dbb9;color:#6e602b}
+.supplier-logo.green{background:#d5e2c9;color:#43633d}
+.supplier-logo{box-shadow:inset 0 1px 0 #f8f1df4d}
+.notice{background:#e0e9d4;border-color:#b9cbae;color:#455f3b}
+.notice.warning{background:#e9dfbe;border-color:#cdbb8d;color:#65522b}
+.new-product-in-delivery{background:linear-gradient(120deg,#dce7d2,#e8eddb);border-color:#b0c4a2;box-shadow:inset 3px 0 0 #7a9966}
+.product-kind{background:#e1e9d5}
+.day-card{background:#ececdd;border-color:#bbcbb0}
+.day-card.today{background:#d6e3cb;border-color:#6c8b5c}
+.stat.feature{background:radial-gradient(ellipse at 95% -20%,#87a37733,transparent 65%),linear-gradient(135deg,#386b4b,#2b563e);color:#fffbee;box-shadow:inset 0 1px 0 #e6edda22,0 9px 22px #34472c14}
+.stat.feature label,.stat.feature small{color:#e1e9d7}
+th{background:#dfe7d3;color:#4c6143}
+.cash-corrections>summary:hover,.cash-corrections[open]>summary{background:#e0e8d5}
+dialog{background:linear-gradient(145deg,#f0eee1,#e9eddd);border-color:#f7f2dc99}
+dialog::backdrop{background:#2e432c66;backdrop-filter:blur(4px)}
+.close-modal{background:#dbe6cf;color:#3c5c38;box-shadow:inset 0 1px 0 #f4f1e057}
+.pay-total{background:radial-gradient(ellipse at top left,#eaeedd,#dee8d3);border-color:#bfceb4}
+.big-change{background:linear-gradient(130deg,#dfebd5,#d5e4ca);border-color:#adc49f;box-shadow:inset 0 1px 0 #f4f4df4d}
+.success-mark{background:radial-gradient(circle at top left,#e9efd9,#cfe1c3);border-color:#b3cba3}
+.success-mark::before{border-color:#799b63aa}
+.empty-icon{color:#6d8660}
+.danger{background:linear-gradient(#efdfcf,#e8d2c1);border-color:#cdaa8f;color:#814734;box-shadow:0 2px 0 #d1b29b}
+.form-error{background:#ecd7c6;color:#82432f}
+.remove{color:#80543d}
+.clear-cart{color:#52674a}
+.stock-pill{background:#f0ebd9;color:#4b6342;border:1px solid #c0ceaf}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.cash-corrections>summary:focus-visible{outline-color:#896023}
+@media(hover:hover) and (pointer:fine){
+  .primary:hover:not(:disabled){background:linear-gradient(145deg,#3b7353,#2b6048)}
+  .secondary:hover:not(:disabled),.back-button:hover{background:#e5ebd8;border-color:#7e9e6b}
+  .nav-button:hover{background:#dce5d2}
+  .nav-button.active:hover{background:#cfdfc4}
+  .chip:hover:not(.active){background:#e1e9d4;border-color:#93ae7f}
+  .product:hover:not(:disabled){border-color:#8fa87c;box-shadow:0 3px 0 #c6d2bb,0 10px 20px #34472c0d}
+  .table-action:hover,.supplier-edit:hover{background:#cfdfc1}
+  .help-button:hover{background:#dbe5d0}
+  .close-modal:hover{background:#cfdfc2}
+  .qty-controls button:hover,.delivery-counter button:hover,.keypad button:hover{background-color:#ccddbd}
+  .quick-cash button:hover{background:#dbe7cf;border-color:#86a571}
+  tbody tr:hover{background:#e8ecda}
+}

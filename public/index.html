@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#216653"><meta name="description" content="Demostración del punto de venta de Abarrotes Patito. Cobro sencillo, inventario y caja.">
+  <title>Patito · Punto de venta</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml"><link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./inventory.css"><link rel="stylesheet" href="./effects.css"><link rel="stylesheet" href="./theme.css"><script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="demo-strip">ESTÁS EN UNA DEMOSTRACIÓN <span>· Productos y precios de ejemplo. No usar para ventas reales.</span></div>
+  <header class="app-header">
+    <a class="brand" href="#vender" aria-label="Patito, ir a vender"><img src="./icon.svg" alt="" width="46" height="46"><span>patito<small>ABARROTES DE TODOS LOS DÍAS</small></span></a>
+    <div class="header-right"><span id="date-label"></span><button class="help-button" id="help">¿Cómo se usa? <span aria-hidden="true">?</span></button></div>
+  </header>
+  <div class="app-layout">
+    <nav class="sidebar" aria-label="Menú principal" id="navigation"></nav>
+    <main id="main"></main>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="storage-error" class="storage-error" role="alert" hidden>No se pudo guardar. Libera espacio antes de continuar; la operación no se completó.</div>
+</body></html>
